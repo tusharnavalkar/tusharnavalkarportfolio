@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tushar Santosh Navalkar | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="preloader"><span>TN</span></div>
+
+<header id="header">
+  <a class="logo" href="#home">T. S. Navalkar</a>
+  <nav id="menu" aria-label="Main">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button id="theme" aria-label="Switch light/dark theme">&#9680;</button>
+  <button id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i><i></i></button>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <p class="hello">Hello, I am</p>
+  <h1 aria-label="Tushar Navalkar"><span id="typed"></span><b class="cursor">|</b></h1>
+  <p class="role">Web Developer</p>
+  <p class="lead">I build fast, responsive websites with HTML, CSS and JavaScript. This portfolio works fully offline.</p>
+  <div class="btns">
+    <a class="btn solid" href="#projects">See my projects</a>
+    <a class="btn" href="#contact">Contact me</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About me</h2>
+  <div class="two">
+    <div class="reveal">
+      <!-- EDIT: write your own details -->
+      <p>I am Tushar Santosh Navalkar, a student who enjoys turning ideas into clean, working websites. I like understanding how structure (HTML), design (CSS) and behaviour (JavaScript) fit together.</p>
+      <p>Right now I am improving my front-end skills and building small projects to practise responsive layouts and animations.</p>
+    </div>
+    <div class="skills reveal">
+      <div class="skill" data-v="90"><span>HTML5</span><em></em></div>
+      <div class="skill" data-v="85"><span>CSS3</span><em></em></div>
+      <div class="skill" data-v="70"><span>JavaScript</span><em></em></div>
+      <div class="skill" data-v="60"><span>jQuery</span><em></em></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="slider reveal" id="slider">
+    <div class="track">
+      <!-- EDIT: replace titles and text with your real projects -->
+      <article><h3>Personal Portfolio</h3><br><br><p>It is language Used for HTML,CSS,JavaScript</p></article>
+      <article><h3>Online Shopping ECommerce Website</h3><br><br><p>It is language Used for Html,Css,Javascript,Php</p></article>
+      <article><h3>Woman Safety System (Raksha)</h3><br><br><p>It is language Used for Xml,Javascript,Java.</p></article>
+    </div>
+    <div class="ctrl">
+      <button id="prev" aria-label="Previous project">&#8592;</button>
+      <div class="dots" id="dots"></div>
+      <button id="next" aria-label="Next project">&#8594;</button>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="two">
+    <div class="reveal">
+      <p>Have a question or an opportunity? Send a message and I will reply.</p>
+      <!-- EDIT: put your real email and phone -->
+      <p><strong>Email:</strong> tusharnavalakar@gmail.com</p>
+      <p><strong>Contact:</strong> +91 9579777258</p>
+    </div>
+    <form id="form" class="reveal">
+      <label>Name<input id="n" required></label>
+      <label>Email<input id="e" type="email" required></label>
+      <label>Message<textarea id="m" rows="4" required></textarea></label>
+      <button class="btn solid" type="submit">Send message</button>
+      <p id="note" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>&copy; <span id="yr"></span> Tushar Santosh Navalkar</footer>
+<script src="script.js"></script>
+</body>
+</html>
